@@ -1,3 +1,58 @@
+.wrapper #sidebar .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+.wrapper #content {
+  padding: 0; }
+  .wrapper #content nav,
+  .wrapper #content .navbar {
+    padding: 0;
+    background-color: #fff !important; }
+    .wrapper #content nav .container-fluid,
+    .wrapper #content .navbar .container-fluid {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      height: 100%; }
+      .wrapper #content nav .container-fluid .main,
+      .wrapper #content .navbar .container-fluid .main {
+        background: none;
+        border-right: 1px solid #E5E7E4;
+        padding: 1.5rem; }
+      .wrapper #content nav .container-fluid .btn,
+      .wrapper #content .navbar .container-fluid .btn {
+        border-radius: 0; }
+      .wrapper #content nav .container-fluid .btn-sec,
+      .wrapper #content .navbar .container-fluid .btn-sec {
+        background: none; }
+      .wrapper #content nav .container-fluid .gray-out,
+      .wrapper #content .navbar .container-fluid .gray-out {
+        color: #929392; }
+      .wrapper #content nav .container-fluid .navbar-text,
+      .wrapper #content .navbar .container-fluid .navbar-text {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important; }
+      .wrapper #content nav .container-fluid .rb,
+      .wrapper #content .navbar .container-fluid .rb {
+        border-left: 1px solid #E5E7E4;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        padding: 1rem; }
 
+/* ...................................
+
+            Media Queries
+
+......................................*/
+@media screen and (max-width: 768px) {
+  .none {
+    display: none; }
+
+  .navbar-text {
+    text-align: center; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

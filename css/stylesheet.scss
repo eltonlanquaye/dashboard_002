@@ -1,6 +1,71 @@
 // mixins
 // variables
-
+$borderRight: 1px solid #E5E7E4;
 // styles
+.wrapper {
+    #sidebar {
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    #content {
+        padding: 0;
+        nav,
+        .navbar {
+            padding: 0; // padding-right: .5rem;
+            // padding-left: 0.2rem;
+            background-color: #fff !important; // padding: 0 !important;
+            .container-fluid {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                height: 100%;
+                .main {
+                    background: none;
+                    border-right: $borderRight;
+                    padding: 1.5rem;
+                }
+                .btn {
+                    border-radius: 0; // padding: 0;
+                }
+                .btn-sec {
+                    background: none;
+                }
+                .gray-out {
+                    color: #929392;
+                }
+                .navbar-text {
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important; // border-right: $borderRight;
+                }
+                .rb {
+                    border-left: $borderRight;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
 
+/* ...................................
 
+            Media Queries
+
+......................................*/
+
+@media screen and (max-width: 768px) {
+    .none {
+        display: none;
+    }
+    .navbar-text {
+        text-align: center;
+    }
+}
