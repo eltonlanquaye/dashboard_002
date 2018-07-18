@@ -1,9 +1,26 @@
-// mixins
-// variables
+/* ...................................
+
+            Mixins
+
+......................................*/
+
+
+/* ...................................
+
+            Variables
+
+......................................*/
 $borderRight: 1px solid #E5E7E4;
-// styles
+
+
+/* ...................................
+
+           Styles
+
+......................................*/
 .wrapper {
-    #sidebar {
+    background-color: #F0F1F0;
+    nav#sidebar {
         .avatar {
             vertical-align: middle;
             width: 50px;
@@ -15,6 +32,7 @@ $borderRight: 1px solid #E5E7E4;
         padding: 0;
         nav,
         .navbar {
+            margin-bottom: 0 !important;
             padding: 0; // padding-right: .5rem;
             // padding-left: 0.2rem;
             background-color: #fff !important; // padding: 0 !important;
@@ -53,11 +71,19 @@ $borderRight: 1px solid #E5E7E4;
             }
         }
     }
+    .dshbrd-content {
+        .gray-border {
+            border: 1px solid #BCBEBB;
+            border-radius: 15px;
+            padding: 8px;
+            font-size: .8rem;
+        }
+    }
 }
 
 /* ...................................
 
-            Media Queries
+            MediaQueries
 
 ......................................*/
 
