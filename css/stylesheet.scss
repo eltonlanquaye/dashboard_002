@@ -78,7 +78,41 @@ $borderRight: 1px solid #E5E7E4;
             padding: 8px;
             font-size: .8rem;
         }
-    }
+        .jumbo {
+            background-color: #fff;
+            padding-top: 3rem;
+            // border-bottom: .1rem solid #E2E1E1;
+            .list-inline {
+                padding-bottom: 1px;
+            }
+            a {
+                &:hover {
+                    border-bottom: 3px solid #1F487E;
+                }  
+            }
+        }
+        #progress1, #progress2, #progress3 {
+            // margin: 3rem;
+            width: 100%;
+            // height: 200px;
+            // position: relative;
+        }
+        div.card {
+            background: none !important;
+            border: none !important;
+        }
+        .push-down {
+            padding-top: 3rem;
+        }
+        div.progressbar-text {
+            top: 60% !important;
+        }
+        .line-separator {
+            height:1px;
+            background:#717171;
+            border-bottom:1px solid #313030;
+        }
+    } 
 }
 
 /* ...................................
@@ -94,4 +128,26 @@ $borderRight: 1px solid #E5E7E4;
     .navbar-text {
         text-align: center;
     }
+    #progress1, #progress2, #progress3 {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    canvas {
+        height: 5rem;
+    }
+    #progress1, #progress2, #progress3 {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .none, .progress {
+        display: none;
+    }
+    .navbar-text {
+        text-align: center;
+    }
+     
 }

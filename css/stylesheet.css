@@ -65,6 +65,26 @@
     border-radius: 15px;
     padding: 8px;
     font-size: .8rem; }
+  .wrapper .dshbrd-content .jumbo {
+    background-color: #fff;
+    padding-top: 3rem; }
+    .wrapper .dshbrd-content .jumbo .list-inline {
+      padding-bottom: 1px; }
+    .wrapper .dshbrd-content .jumbo a:hover {
+      border-bottom: 3px solid #1F487E; }
+  .wrapper .dshbrd-content #progress1, .wrapper .dshbrd-content #progress2, .wrapper .dshbrd-content #progress3 {
+    width: 100%; }
+  .wrapper .dshbrd-content div.card {
+    background: none !important;
+    border: none !important; }
+  .wrapper .dshbrd-content .push-down {
+    padding-top: 3rem; }
+  .wrapper .dshbrd-content div.progressbar-text {
+    top: 60% !important; }
+  .wrapper .dshbrd-content .line-separator {
+    height: 1px;
+    background: #717171;
+    border-bottom: 1px solid #313030; }
 
 /* ...................................
 
@@ -73,6 +93,21 @@
 ......................................*/
 @media screen and (max-width: 768px) {
   .none {
+    display: none; }
+
+  .navbar-text {
+    text-align: center; }
+
+  #progress1, #progress2, #progress3 {
+    display: none; } }
+@media screen and (max-width: 320px) {
+  canvas {
+    height: 5rem; }
+
+  #progress1, #progress2, #progress3 {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  .none, .progress {
     display: none; }
 
   .navbar-text {

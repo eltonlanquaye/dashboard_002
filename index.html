@@ -20,7 +20,11 @@
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
+    
+    <!-- Progress JS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 
+     
 </head>
 
 <body>
@@ -152,7 +156,7 @@
             <div class="dshbrd-content">
                 <!-- Jumbo -->
                 
-                    <div class="container-fluid">
+                    <div class="container-fluid jumbo">
                         <h1 class="display-4">Lorem, ipsum dolor.</h1>
                         <div>
                             <ul class="list-inline">
@@ -168,21 +172,88 @@
                               </ul>
                         </div>
                         <div class="jumbo-links">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">Lorem ipsum</li>
-                                <li class="list-inline-item">Phasellus iaculis</li>
-                                <li class="list-inline-item">Nulla volutpat</li>
-                                <li class="list-inline-item">Nulla volutpat</li>
-                                <li class="list-inline-item">Nulla volutpat</li>
-                                <li class="list-inline-item">Nulla volutpat</li>
-                                <li class="list-inline-item">Nulla volutpat</li>
+                            <ul class="list-inline">                                
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">  Lorem ipsum</a>
+                                </li>
+                                
+                                
                             </ul>
                         </div>
                     </div>
 
                 <!-- /Jumbo -->
-            </div>
 
+                <!-- Charts -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-sm-6 col-lg-2 col-xl-2">
+                            <div class="card push-down">
+                                <div class="card-body">
+                                    <div id="progress1"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-sm-6 col-lg-2 col-xl-2">
+                            <div class="card push-down">
+                                <div class="card-body">
+                                    <div id="progress2"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-sm-6 col-lg-2 col-xl-2">
+                            <div class="card push-down">
+                                <div class="card-body">
+                                    <div id="progress3"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-sm-6 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <canvas id="myChart" height="150rem" ></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /Charts -->
+
+                <!-- separator -->
+                <div class="line-separator container">
+
+                </div>
+
+            </div>
+            <!-- Dashboard Content -->
         </div>
     </div>
 
@@ -196,6 +267,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+   <!-- charts.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+   <script src="scripts/charts.js"></script>
+   <script src="scripts/progressbar.js"></script>
+   <script src="scripts/progress.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -203,6 +279,8 @@
                 $('#sidebar').toggleClass('active');
             });
         });
+
+       
     </script>
 </body>
 
